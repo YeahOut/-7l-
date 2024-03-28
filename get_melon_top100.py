@@ -15,7 +15,7 @@ for cur_song in playlist['items']:
     id = cur_song['track']['id']
     track = sp.track(id)
     artist = track['artists'][0]['name']
-    name = track['album']['name']
+    name = track['name']
     key = sp.audio_features(id)[0]['key']
     print(cnt," ################################")
     print("artist :", artist)
